@@ -38,6 +38,10 @@ public class DrumMachine {
         stop.addActionListener(new MyStopListener()); //назначаем ей слушателя, который будет останавливать выполнение кода
         buttonBox.add(stop); //добавляем кнопку в контейнер
 
+        JButton stopDouble = new JButton("Остановите!"); //создаем кнопку
+        stop.addActionListener(new MyStopListener()); //назначаем ей слушателя, который будет останавливать выполнение кода
+        buttonBox.add(stopDouble); //добавляем кнопку в контейнер
+
         JButton upTempo = new JButton("Выше темп");
         upTempo.addActionListener(new MyUpTempoListener());
         buttonBox.add(upTempo); //здесь все аналогично предыдущим 2 кнопкам
